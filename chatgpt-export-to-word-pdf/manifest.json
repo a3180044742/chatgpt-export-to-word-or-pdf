@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "chatgpt export to word/pdf",
+  "version": "3.1.0",
+  "description": "Export the current ChatGPT conversation to PDF or Word, with both formula-friendly and fast Word modes.",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "action": {
+    "default_title": "chatgpt export to word/pdf",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
