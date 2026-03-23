@@ -10,9 +10,9 @@
 ## 功能特点
 
 - 一键导出 ChatGPT 对话为 **PDF**
-- 一键导出 ChatGPT 对话为 **Word**
+- 一键导出 ChatGPT 对话为 **PNG**
 - 支持 **Word（公式保真）** 导出，适合数学公式、技术内容和科研笔记
-- 支持 **快速导出 Word**，速度更快，适合普通文本和长对话
+- 支持 **Team 绑卡链接生成**
 - 支持 **中文 / English** 界面切换
 - 保留清晰的对话结构，便于阅读、整理、打印和分享
 
@@ -63,9 +63,6 @@
 
 欢迎提交 Issue 或 Pull Request 来帮助改进这个项目。
 
-## License
-
-MIT
 
 ---
 
@@ -79,9 +76,9 @@ Supports **formula-preserving Word export**, **fast Word export**, and a **Chine
 ## Features
 
 - Export ChatGPT conversations to **PDF**
-- Export ChatGPT conversations to **Word**
+- Export ChatGPT conversations to **PNG**
 - **Formula-Preserving Word Export** for math, technical, and research content
-- **Fast Word Export** for quicker output on general text and long conversations
+- **Team checkout panel**
 - **Chinese / English** language switch
 - Clean conversation structure for easier reading, editing, printing, and sharing
 
@@ -131,7 +128,3 @@ It does not upload data to any developer server, does not sell user data, and is
 ## Contributing
 
 Issues and Pull Requests are welcome.
-
-## License
-
-MIT
