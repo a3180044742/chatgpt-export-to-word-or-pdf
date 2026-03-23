@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatgpt export to word/pdf</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <div class="topbar">
+        <div class="heading-block">
+          <div class="eyebrow" id="brand">chatgpt export to word/pdf</div>
+          <h1 id="title">导出当前对话</h1>
+        </div>
+        <div class="lang-switch" aria-label="Language switch">
+          <button class="lang-btn" data-lang="zh" type="button">中文</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+      </div>
+
+      <p class="lead" id="lead">将当前 ChatGPT 对话导出为 PDF、Word 或 PNG 图片。</p>
+
+      <div class="actions-column">
+        <button id="pdfButton" type="button">导出 PDF</button>
+        <button id="imageButton" type="button">导出图片（PNG）</button>
+        <button id="docxRenderedButton" type="button">导出 Word（公式保真）</button>
+        <button id="docxFastButton" type="button" class="secondary">快速导出 Word（LaTeX）</button>
+        <button id="teamPayButton" type="button" class="secondary">打开 Team 绑卡面板</button>
+      </div>
+
+      <div class="mode-note" id="docxRenderedNote"></div>
+      <div class="mode-note" id="docxFastNote"></div>
+
+      <div id="status" class="status">请先打开 chatgpt.com 的某个对话页面。</div>
+      <div class="hint" id="hint"></div>
+    </main>
+
+    <script src="lib/html-docx.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
