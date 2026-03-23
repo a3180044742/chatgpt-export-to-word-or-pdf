@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "chatgpt export to word/pdf",
+  "version": "3.4.3",
+  "description": "Export the current ChatGPT chat or current Project to PDF, Word, or ZIP-packaged PNG images, and open a Team checkout panel.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "action": {
+    "default_title": "chatgpt export to word/pdf",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
